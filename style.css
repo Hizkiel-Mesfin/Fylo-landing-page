@@ -1,0 +1,39 @@
+/* Font Family  */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+/*******************/
+/* Reset */
+/*******************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Please write your css sections inside each allocated place so that we can have a clean code */
+
+/*****************/
+/* HEADER */
+/*****************/
+
+/*****************/
+/* HERO SECTION */
+/*****************/
+
+/*************************/
+/* STAY PRODUCTIVE SECTION*/
+/*************************/
+
+/*****************/
+/* FOOTER */
+/*****************/
