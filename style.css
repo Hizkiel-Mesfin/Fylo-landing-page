@@ -20,8 +20,14 @@ body{
   font-family: 'Open Sans';
   font-family: "Raleway",sans-serif;
   
-  max-width: 1440px;
+  
 }
+
+.page {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
 /* Please write your css sections inside each allocated place so that we can have a clean code */
 
 /*****************/
