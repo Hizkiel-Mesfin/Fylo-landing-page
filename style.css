@@ -1,7 +1,7 @@
 /* Font Family  */
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 /*******************/
 /* Reset */
 /*******************/
@@ -16,24 +16,87 @@
   font-size: 62.5%;
 }
 
-body {
-  font-family: "Raleway", sans-serif;
+body{
+  font-family: 'Open Sans';
+  font-family: "Raleway",sans-serif;
+  
+  max-width: 1440px;
 }
-
 /* Please write your css sections inside each allocated place so that we can have a clean code */
 
 /*****************/
 /* HEADER */
 /*****************/
-
+.header{
+  margin:2rem 6rem;
+  padding:5rem;
+}
+.fylo-nav{
+  font-size:1.6rem;
+  float:right;
+ 
+}
+.header a{
+  text-decoration: none;
+  color: black;
+  margin-left: 5rem;
+}
 /*****************/
 /* HERO SECTION */
 /*****************/
 
+.upper-box{
+  float:left;
+  max-width:40%;
+  margin-top:8rem;
+  margin-left:10rem;
+}
+.main-heading{
+  font-size: 3.8rem;
+  line-height: 5.5rem;
+  font-family: "Raleway";
+}
+.upper-box-txt{
+  font-size: 2rem;
+  margin:2rem 0;
+  line-height: 2.5rem;
+  font-family:'open sans';
+}
+.email{
+  width: 55%;
+  padding:1.5rem;
+  margin-right: 1.5rem;
+}
+.email::placeholder{
+  color: hsl(0, 0%, 75%);
+}
+.get-started{
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  width: 35%;
+  border: none;
+  border-radius: 0.4rem;
+  padding:1.5rem;
+  font-size: 1.6rem;
+}
+.upper-img{
+  float:right;
+  max-width:25%;
+  margin-right:35rem;
+}
+.first-img{
+  max-width: 65rem;
+}
 /*************************/
 /* STAY PRODUCTIVE SECTION*/
 /*************************/
 
 /*****************/
 /* FOOTER */
+/*****************/
+
+
+
+*****************/
+/* MEDIA QUERIS */
 /*****************/
