@@ -2,6 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 /*******************/
 /* Reset */
 /*******************/
@@ -17,10 +18,15 @@
 }
 
 body{
+  font-size: 1.6rem;
   font-family: 'Open Sans';
   font-family: "Raleway",sans-serif;
   
-  
+}
+
+.container {
+  width: 144rem;
+  margin: 0 auto;
 }
 
 .page {
@@ -33,13 +39,25 @@ body{
 /*****************/
 /* HEADER */
 /*****************/
+
 .header{
-  margin:2rem 6rem;
-  padding:5rem;
+  margin: 5rem 0    /*6rem*/;
+
+  /* We don't need this on too */
+  /* padding:5rem; */
+  display: flex;
+  justify-content: space-between;
+
+  /* I'm adding flex here to achieve the desired layout */
 }
+
 .fylo-nav{
   font-size:1.6rem;
-  float:right;
+
+  /* This makes it complicated to manages the page 
+  so I'm getting rid of it  */
+
+  /* float:right; */
  
 }
 .header a{
@@ -51,11 +69,25 @@ body{
 /* HERO SECTION */
 /*****************/
 
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+
+}
+
 .upper-box{
-  float:left;
+
+/* Same thing here (Float is old and useless now a days with the introduction of flex and grid. We are lucky we don't have to deal with it anymore) */
+
+  /* float:left; */
+
   max-width:40%;
   margin-top:8rem;
-  margin-left:10rem;
+
+  /* We don't need this one */
+  /* margin-left:10rem; */
 }
 .main-heading{
   font-size: 3.8rem;
@@ -86,13 +118,18 @@ body{
   font-size: 1.6rem;
 }
 .upper-img{
-  float:right;
-  max-width:25%;
-  margin-right:35rem;
+  /* float:right; */
+  /* max-width:25%; */
+
+  /* Niether do we need this one */
+  /* margin-right:35rem; */
 }
+
 .first-img{
   max-width: 65rem;
 }
+
+
 /*************************/
 /* STAY PRODUCTIVE SECTION*/
 /*************************/
