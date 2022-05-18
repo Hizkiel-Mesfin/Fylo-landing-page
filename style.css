@@ -97,6 +97,26 @@ body{
 
 
 
-*****************/
+/*****************/
 /* MEDIA QUERIS */
 /*****************/
+@media only screen and (max-width: 375px) {
+  body {
+    width:37.5rem;
+    font-size: 37.5%;
+  }
+  .fylo-logo{
+    width:12rem;
+  }
+
+  .header {
+    margin:1rem 3rem;
+    padding:0;
+    border:2px solid tomato;
+    font-size: 37.5%;
+}
+
+.header a {
+  margin:0;
+    padding:0;
+}
