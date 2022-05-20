@@ -1,7 +1,23 @@
 /* Font Family  */
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/* Custom properties */
+
+:root {
+  /* Primary */
+  --very-dark-blue: hsl(243, 87%, 12%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+
+  /* Accent */
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+
+  /* Neutral */
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+}
 
 /*******************/
 /* Reset */
@@ -13,23 +29,17 @@
   box-sizing: border-box;
 }
 
-:root {
+html {
   font-size: 62.5%;
 }
 
-body{
+body {
   font-size: 1.6rem;
-  font-family: 'Open Sans';
-  font-family: "Raleway",sans-serif;
-  
+  font-family: "Open Sans";
+  font-family: "Raleway", sans-serif;
 }
 
 .container {
-  width: 144rem;
-  margin: 0 auto;
-}
-
-.page {
   max-width: 144rem;
   margin: 0 auto;
 }
@@ -40,8 +50,9 @@ body{
 /* HEADER */
 /*****************/
 
-.header{
-  margin: 5rem 0    /*6rem*/;
+.header {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 
   /* We don't need this on too */
   /* padding:5rem; */
@@ -51,16 +62,15 @@ body{
   /* I'm adding flex here to achieve the desired layout */
 }
 
-.fylo-nav{
-  font-size:1.6rem;
+.fylo-nav {
+  font-size: 1.6rem;
 
   /* This makes it complicated to manages the page 
   so I'm getting rid of it  */
 
   /* float:right; */
- 
 }
-.header a{
+.header a {
   text-decoration: none;
   color: black;
   margin-left: 5rem;
@@ -74,50 +84,49 @@ body{
   align-items: center;
   justify-content: space-between;
   gap: 6rem;
-
+  margin-bottom: 10rem;
 }
 
-.upper-box{
-
-/* Same thing here (Float is old and useless now a days with the introduction of flex and grid. We are lucky we don't have to deal with it anymore) */
+.upper-box {
+  /* Same thing here (Float is old and useless now a days with the introduction of flex and grid. We are lucky we don't have to deal with it anymore) */
 
   /* float:left; */
 
-  max-width:40%;
-  margin-top:8rem;
+  max-width: 40%;
+  margin-top: 8rem;
 
   /* We don't need this one */
   /* margin-left:10rem; */
 }
-.main-heading{
+.main-heading {
   font-size: 3.8rem;
   line-height: 5.5rem;
   font-family: "Raleway";
 }
-.upper-box-txt{
+.upper-box-txt {
   font-size: 2rem;
-  margin:2rem 0;
+  margin: 2rem 0;
   line-height: 2.5rem;
-  font-family:'open sans';
+  font-family: "open sans";
 }
-.email{
+.email {
   width: 55%;
-  padding:1.5rem;
+  padding: 1.5rem;
   margin-right: 1.5rem;
 }
-.email::placeholder{
+.email::placeholder {
   color: hsl(0, 0%, 75%);
 }
-.get-started{
+.get-started {
   background-color: hsl(224, 93%, 58%);
   color: white;
   width: 35%;
   border: none;
   border-radius: 0.4rem;
-  padding:1.5rem;
+  padding: 1.5rem;
   font-size: 1.6rem;
 }
-.upper-img{
+.upper-img {
   /* float:right; */
   /* max-width:25%; */
 
@@ -125,21 +134,154 @@ body{
   /* margin-right:35rem; */
 }
 
-.first-img{
+.first-img {
   max-width: 65rem;
 }
 
+/***************************/
+/* SECTION STAY PRODUCTIVE  */
+/***************************/
 
-/*************************/
-/* STAY PRODUCTIVE SECTION*/
-/*************************/
+.background {
+  width: 100%;
+  height: 10rem;
+  background-image: url(images/bg-curve-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.section-stay-productive {
+  background-color: var(--light-grayish-blue);
+  padding: 5rem 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+
+.illustration-2 {
+  max-width: 35%;
+}
+
+.text-box {
+  max-width: 50%;
+}
+
+.stay-productive-heading {
+  font-size: 3.6rem;
+  margin-bottom: 3rem;
+}
+
+.stay-productive-text {
+  max-width: 70%;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+.link-box {
+  display: inline-block;
+  border-bottom: 1px solid #777;
+  margin-bottom: 4rem;
+}
+
+.productive-link {
+  text-decoration: none;
+  color: #555;
+}
+
+.fa-circle-arrow-right {
+  font-size: 1.2rem;
+  margin-left: 0.6rem;
+}
+
+.testimonial-box {
+  max-width: 40%;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-sizing: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.fa-quote-left {
+  margin-bottom: 0.6rem;
+}
+
+.testimonial-text {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.kyle {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.company {
+  font-size: 1rem;
+}
+
+/************************/
+/* section early access*/
+/************************/
+
+.early-access {
+  padding: 8rem 0;
+  background-color: var(--desaturated-blue);
+  color: #fff;
+}
+
+.early-access-flex {
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+}
+.early-access-text-box {
+  max-width: 40%;
+}
+.early-access-heading {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+.early-access-text {
+  font-size: 1.6rem;
+}
+
+.form input {
+  display: block;
+  width: 40rem;
+  padding: 1.2rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.form button {
+  display: block;
+  font-size: 1.4rem;
+  width: 50%;
+  background-color: var(--bright-blue);
+  color: #fff;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1.2rem 0;
+}
 
 /*****************/
 /* FOOTER */
 /*****************/
 
-
-
-*****************/
+/*****************/
 /* MEDIA QUERIS */
 /*****************/
